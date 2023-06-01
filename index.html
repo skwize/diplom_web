@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Рязанский политехнический колледж</title>
+</head>
+<body>
+    <header class="main_header">
+        <div class="container">
+            <nav class="header_nav">
+                <ul class="navigation">
+                    <li class="nav-item"><a href="./index.html">Главная</a></li>
+                    <li class="nav-item"><a href="./aboutUs.html">О нас</a></li>
+                    <li class="nav-item"><a href="./raspis.html">Расписание</a></li>
+                </ul>
+            </nav>
+            <div class="header_content">
+                <img src="./assets/imgs/logotip.png" alt="" class="logo">
+                <h1 class="title">Рязанский политехнический колледж</h1>
+                <span class="subtitle">Областное государственное бюджетное профессиональное образовательное учреждение "Рязанский политехнический колледж"</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="rate">
+            <div class="container">
+                <h2 class="sect_title">Деловая репутация колледжа</h2>
+                <ol class="rate_list">
+                    <li class="rate_list-item">
+                        <span onclick="return show_modal_f()">Внутренняя система оценки качества образования</span>
+                    </li>
+                    <li class="rate_list-item">
+                        <span onclick="return show_modal_sec()">Внешняя система оценки качества образования</span>
+                    </li>
+                    <li class="rate_list-item">
+                        <a href="./uchred.html">Учредители</a>
+                    </li>
+                    <li class="rate_list-item">
+                        <a href="./smi.html">Сми о нас</a>
+                    </li>
+                    <li class="rate_list-item">
+                        <a href="./portfolio.html">Портфолио студентов</a>
+                    </li>
+                    <li class="rate_list-item">
+                        <a href="./docs.html">Грамоты, дипломы, письма</a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h2 class="sect_title">Новостная лента</h2>
+                <div class="news_container">
+                    <div class="news_block">
+                        <img src="./assets/imgs/IMG-20230504-WA0005_3.jpg" alt="" class="news_img">
+                        <div class="news_text">
+                            <a href="./news-atlet.html" class="news-title">Лёгкоатлетическая эстафета</a>
+                            <p class="news-descr">4 мая 2023 г. студенты нашего колледжа вместе с преподавателем физической культуры Г. М. Зотовой приняли активное участие в традиционной лёгкоатлетической эстафете, посвящённой 78-й годовщине Победы в Великой Отечественной войне 1941-1945г.г. Мероприятие имело следующие цели: патриотическое воспитание подрастающего поколения; создание условий для развития физической культуры и массового спорта в городе Рязани;</p>
+                        </div>
+                    </div>
+
+                    <div class="news_block">
+                        <img src="./assets/imgs/EEEIMG_8452.jpg" alt="" class="news_img">
+                        <div class="news_text">
+                            <a href="./news-electro.html" class="news-title">В Рязани намерены создать образовательно-производственный кластер «Радиоэлектроника»</a>
+                            <p class="news-descr">
+                                В Рязани обсудили создание образовательно-производственного центра (кластера) «Радиоэлектроника» в рамках федерального проекта «Профессионалитет».
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news_block">
+                        <img src="./assets/imgs/1111Oop5t6eW5iw.jpg" alt="" class="news_img">
+                        <div class="news_text">
+                            <a href="./news-obj.html" class="news-title">Интегрированный урок физики и ОБЖ</a>
+                            <p class="news-descr">
+                                21 апреля 2023 г.  в  колледже  на  пр. Шабулина  преподавателем физики Пылаевой О.Н. и преподавателем ОБЖ Ларюшиным И.М. был проведён открытый интегрированный урок физики и ОБЖ со студентами учебной группы № 88. Тема урока: «Радиация и способы защиты от ее воздействия». В ходе урока студенты отгадали кроссворд и выяснили что же такое радиоактивность, как, когда …    
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL PDF -->
+    <div id="modal-wrapper_first" onclick="return close_modal()">
+        <button class="close_btn" onclick="return close_modal()">+</button>
+        <div class="modal">
+            <iframe src="./assets/media/Grafik_otsenochnyh_protsedur_2022_2023g_0.pdf" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- MODAL PDF -->
+    <div id="modal-wrapper_sec" onclick="return close_modal()">
+        <button class="close_btn" onclick="return close_modal()">+</button>
+        <div class="modal">
+            <iframe src="http://gcrodost14.nios.ru/sites/gcrodost14.nios.ru/files/vneshnie_procedury.pdf" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="./assets/js/modal.js"></script>
+</body>
+</html>

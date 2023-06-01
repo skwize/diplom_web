@@ -1,0 +1,177 @@
+@import url('./main.css');
+
+.navigation{
+    float: right;
+    width: 250px;
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+
+.header_nav{
+    width: 100%;
+    display: inline-block;
+}
+
+
+
+.header_img{
+    width: 105px;
+    margin-right: 30px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+
+.header_title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_nav .nav-item{
+    color: #383838;
+}
+
+
+.title{
+    margin-left: 200px;
+    margin-top: 50px;
+    color: #383838;
+}
+
+
+
+.first_table, .second_table{
+    display: table;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.first, .second{
+    display: flex;
+}
+
+.second_table{
+    margin-bottom: 120px;
+}
+
+.table_title{
+    font-size: 20px;
+}
+
+.table{
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    font-size: 20px;
+}
+
+.column{
+    line-height: 32px;
+    text-align: center;
+}
+
+.column-1, .column-4{
+    width: 56px;
+}
+
+.row{
+    height: 32px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+
+.row-10{
+    border-bottom: none;
+}
+
+.column-2, .column-5{
+    width: 230px;
+}
+
+.column-3{
+    width: 176px;
+}
+
+.column-4 .row{
+    border-left: 1px solid;
+}
+.column-3 .row{
+    border:none;
+}
+
+.column-5 .row{
+    border-right: none;
+}
+
+.row-1{
+    font-weight: bold;
+}
+
+
+@media (max-width: 750px) {
+    main .table{
+        flex-direction: column;
+    }
+
+    main .row-10{
+        border-bottom: 1px solid;
+    }
+
+    main .title{
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    main .column-4 .row{
+        border-left: none;
+    }
+
+    main .column-2, .column-5 {
+        width: 100%;
+    }
+    main .column-2 .row{
+        border-right: none;
+    }
+
+    main .column-5 .row{
+        border-right: none;
+    }
+
+    main .column .row-10{
+        border-bottom: none;
+    }
+
+    main .column-3{
+        width: 100%;
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+    }
+
+    main .column-3 .row{
+        border: none;
+    }
+}
+
+
+@media (max-width:470px){
+    header .container{
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+}

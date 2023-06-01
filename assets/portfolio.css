@@ -1,0 +1,91 @@
+@import url('./main.css');
+
+/* Header */
+
+.navigation{
+    float: right;
+    width: 250px;
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+
+.header_nav{
+    width: 100%;
+    display: inline-block;
+}
+
+.header_img{
+    width: 105px;
+    margin-right: 30px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.header_title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_nav .nav-item{
+    color: #383838;
+}
+
+/* OTHER STYLES */
+
+.students_list{
+    margin: 60px 0;
+}
+
+.sect_title{
+    text-align: center;
+}
+
+.list{
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px 30px;
+    list-style: none;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.list-item{
+    max-height: 650px;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 10px 35px;
+    font-size: 18px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item:hover{
+    border-color: blue;
+    color: blue;
+}
+
+
+
+
+.list-item>iframe{
+    height: 650px;
+    display: none;
+    margin-top: 20px;
+}
